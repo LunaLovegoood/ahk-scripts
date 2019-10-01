@@ -1,7 +1,14 @@
 #SingleInstance, force
 #NoTrayIcon
 
-capslock::
-    send {Shift down}{Ctrl down}
-    send {Shift up}{Ctrl up}
-return
+; required for script to work correctly even
+; if script is launched when CapsLock is on
+SetCapsLockState, Off
+
+ChangeLanguage()
+{
+    Send, {Shift down}{Ctrl down}
+    Send, {Shift up}{Ctrl up}
+}
+
+*CapsLock::ChangeLanguage()

@@ -1,4 +1,5 @@
 #SingleInstance, force
+#NoTrayIcon
 
 capslock::
     send {Shift down}{Ctrl down}

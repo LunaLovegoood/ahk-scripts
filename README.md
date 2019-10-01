@@ -7,7 +7,8 @@ This repository contains AutoHotkey scripts.
 - \[CapsLock\] - change input language;  
 - \[Insert\] - launches cmd;  
 - \[Ctrl+Insert\] - launches powershell;  
-- \[ScrollLock\] - launches git-bash.  
+- \[ScrollLock\] - launches git-bash;  
+- \[Super+Shift+Q\] - closes active windows.  
   
 ## Dependencies  
   

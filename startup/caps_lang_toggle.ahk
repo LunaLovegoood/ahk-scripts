@@ -1,5 +1,6 @@
-#SingleInstance, force
+#NoEnv
 #NoTrayIcon
+#SingleInstance, force
 
 ; required for script to work correctly even
 ; if script is launched when CapsLock is on

@@ -4,6 +4,17 @@
 
 GIT_LOCATION := "C:\Program Files\Git\"
 
-*Insert::Run, cmd.exe
+LaunchTerminalFromHome(path_to_terminal)
+{
+    current_working_dir := A_WorkingDir
+    EnvGet, home_dir, USERPROFILE
 
-*ScrollLock::Run, % GIT_LOCATION . "git-bash.exe"
+    SetWorkingDir, % home_dir
+    Run, % path_to_terminal
+
+    SetWorkingDir, % current_working_dir
+}
+
+*Insert::LaunchTerminalFromHome("cmd.exe")
+
+*ScrollLock::LaunchTerminalFromHome(GIT_LOCATION . "git-bash.exe")

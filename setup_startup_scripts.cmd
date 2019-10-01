@@ -11,8 +11,8 @@ set STARTUP_FOLDER=%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Pr
 rem Path to script which will launch all ahk scripts on startup
 set START_AHKS_SCRIPT="%STARTUP_FOLDER%\start_ahks.cmd"
 
-rem Array of ahk scripts to be executed on startup
-set startup_scripts=caps_lang_toggle
+rem Command which finds all files inside startup/ dir which ends with .ahk
+set find_startup_scripts="dir startup | awk "/\.ahk$/ {print $5}""
 
 rem Clear script file
 break > %START_AHKS_SCRIPT%
@@ -21,6 +21,6 @@ rem Hide output from start command invokations
 echo @echo off > %START_AHKS_SCRIPT%
 
 rem Append rows to the script file to launch need ahk scripts
-for %%s in (%startup_scripts%) do (
-    echo start "" "%cd%\%%s.ahk" >> %START_AHKS_SCRIPT%
+for /f "tokens=*" %%s in ('%find_startup_scripts%') do (
+    echo start "" "%cd%\startup\%%s" >> %START_AHKS_SCRIPT%
 )

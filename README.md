@@ -11,6 +11,7 @@ This repository contains AutoHotkey scripts.
   
 ## Dependencies  
   
+- [AutoHotkey](https://www.autohotkey.com)  
 - [awk](http://gnuwin32.sourceforge.net/packages/gawk.htm)  
 
 ---  

@@ -15,6 +15,8 @@ LaunchTerminalFromHome(path_to_terminal)
     SetWorkingDir, % current_working_dir
 }
 
-*Insert::LaunchTerminalFromHome("cmd.exe")
+Insert::LaunchTerminalFromHome("cmd.exe")
+
+^Insert::LaunchTerminalFromHome("powershell.exe")
 
 *ScrollLock::LaunchTerminalFromHome(GIT_LOCATION . "git-bash.exe")

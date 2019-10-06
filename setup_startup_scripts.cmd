@@ -12,7 +12,7 @@ rem Path to script which will launch all ahk scripts on startup
 set START_AHKS_SCRIPT="%STARTUP_FOLDER%\start_ahks.cmd"
 
 rem Command which finds all files inside startup/ dir which ends with .ahk
-set find_startup_scripts="dir startup | awk "/\.ahk$/ {print $5}""
+set find_startup_scripts="dir startup | awk "/\.ahk$/ {print $NF}""
 
 rem Clear script file
 break > %START_AHKS_SCRIPT%

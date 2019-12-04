@@ -2,7 +2,8 @@
     'lang_toggle.ahk',
     'terminal.ahk',
     'local.ahk',
-    'window_management.ahk'
+    'window_management.ahk',
+    'media.ahk'
 )
 
 foreach ($script in $scripts_to_run) {

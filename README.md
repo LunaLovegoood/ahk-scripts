@@ -22,3 +22,9 @@ This repository contains AutoHotkey scripts.
 ## Copyright  
   
 © Yurii Khomiak  
+  
+---  
+  
+## Credits  
+  
+sdias(Sergio Dias) - [Windows 10 Virtual Desktop Enhancer](https://github.com/sdias/win-10-virtual-desktop-enhancer).  
